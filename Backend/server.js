@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const port = 4000;
+const port = 6700;
 const MONGODB_URI = 'mongodb+srv://haris:haris123@node-api.3jdt3vm.mongodb.net/';
 mongoose.connect(MONGODB_URI);
 const db = mongoose.connection;
@@ -56,7 +56,7 @@ app.get('/hello', async (req, res) => {
 app.listen(port, () => {
 
   console.log(`Server running on port ${port}`);
-
+  console.log('hello, backend')
 });
 
 
